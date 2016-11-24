@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Ad Lib' a capella</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +23,7 @@
 
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/custom-adlib.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,7 +44,9 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                	<img class="photo img-responsive" src="img/logo.png" alt="Photo Ad Lib'">
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,12 +56,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>                    <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#presentation">En quelques mots</a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="#about">En quelques dates</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a class="page-scroll" href="#team">Qui sommes-nous ?</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -74,24 +78,47 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                <div class="intro-lead-in">Bienvenue sur le site d'Ad Lib'</div>
+                <!--<div class="intro-heading">It's Nice To Meet You</div>-->
+                <a href="#presentation" class="hidden-xs page-scroll btn btn-xl">Découvrez-nous !</a>
             </div>
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section id="services">
+    <!-- Présentations Section -->
+    <section id="presentation">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">En quelques mots</h2>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-md-4">
+            <div class="row">
+            	<div class="col-sm-4">
+            		<img class="photo img-responsive" src="img/photo-presentation.jpg" alt="Photo Ad Lib'">
+            	</div>
+            	<div class="col-sm-8">
+            		<div class="text-justify">
+						<!--<span class="adlib">Ad Lib'</span> -->
+						<p class="large text-muted">
+							<img class="adlib" src="img/logo-texte.png" alt="Ad Lib'" />
+						s'inscrit dans la lignée des groupes a capella modernes, autour de <b>3 chanteuses, 2 chanteurs et un beatboxer</b>.
+						</p>
+						
+						<p class="large text-muted">
+							Admiratif des plus grands, comme Take6, The Real Group, Rajaton... Ad Lib' aime piocher ses morceaux dans tous les répertoires, des années 80 à nos jours, <b>de Stromae aux Beatles</b>. Ils rassemblent, dans un spectacle étonnant mêlant voix et lumières, <b>compositions, arrangements originaux et uniques</b>, écrits d'une main de maître par Adeline Guihard.
+						</p>
+						
+						<p class="large text-muted">
+							Originaire de la région nantaise, <img class="adlib" src="img/logo-texte.png" alt="Ad Lib'" /> a forgé son expérience grâce à de nombreux concerts, soirées privées, mais aussi par d'incroyables rencontres comme la <b>première partie de Witloof Bay</b> et l'inoubliable Master Class, achevée sur scène, avec les <b>Opus Jam !</b>
+						</p>
+						
+					</div>
+					<div class="text-center">
+	                    <h3 class="section-subheading text-muted">Venez découvrir <img class="adlib" src="img/logo-texte.png" alt="Ad Lib'" /> en concert, <br /> et laissez-vous embarquer pour un voyage hors du temps…</h3>
+                    </div>
+            	</div>
+                <!--<div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
@@ -114,17 +141,17 @@
                     </span>
                     <h4 class="service-heading">Web Security</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
+                    <h2 class="section-heading">En quelques dates</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
@@ -201,96 +228,67 @@
     </section>
 
     <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
+    <section id="team">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Nous voici !</h2>
+                    <h3 class="section-subheading text-muted">Trois chanteuses, deux chanteurs, un beat-box</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
+                        <h4>Karine Evain</h4>
+                        <p class="text-muted">Mezzo soprano</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
+                        <h4>Emmnauelle Maillard</h4>
+                        <p class="text-muted">Alto</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
+                        <h4>Solenn Ricordel</h4>
+                        <p class="text-muted">Soprano</p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/4.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Xavier Peny</h4>
+                        <p class="text-muted">Tenor</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/5.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Romuald Maillard</h4>
+                        <p class="text-muted">Barython</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/6.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Eric Docet</h4>
+                        <p class="text-muted">Beat-box</p>
+                    </div>
+                </div>
+                <div class="col-sm-offset-4 col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/7.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Adeline Guihard</h4>
+                        <p class="text-muted">Direction artistique / Arrangements, compositions</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Clients Aside -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
 
     <!-- Contact Section -->
     <section id="contact">
