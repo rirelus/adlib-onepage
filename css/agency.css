@@ -154,6 +154,12 @@ fieldset[disabled] .btn-xl.active {
   color: #be0a27;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
+.navbar-custom .navbar-brand.logo {
+  background-image: url(../img/logo.png);
+  background-size: 100% auto;
+  background-position: center center;
+  display: block;
+}
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
@@ -223,6 +229,9 @@ fieldset[disabled] .btn-xl.active {
   }
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
+  }
+  .navbar-custom.affix .navbar-brand > img {
+    position: relative;
   }
 }
 header {

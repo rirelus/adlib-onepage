@@ -85,7 +85,13 @@ h1, h2, h3, h4, h5, h6 {
     border-color: transparent;
     .navbar-brand {
         color: @theme-primary;
-        .script-font;
+        .script-font;        	
+        &.logo {
+	       background-image:url(../img/logo.png); 
+	       background-size: 100% auto; 
+	       background-position: center center; 
+	       display:block;
+	    }
         &:hover,
         &:focus,
         &:active,
@@ -162,6 +168,9 @@ h1, h2, h3, h4, h5, h6 {
         padding: 10px 0;
         .navbar-brand {
             font-size: 1.5em;
+        }
+        .navbar-brand>img {
+            position: relative;
         }
     }
 }
