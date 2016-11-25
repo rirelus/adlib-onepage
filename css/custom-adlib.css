@@ -53,6 +53,35 @@ h2::first-letter {
 #about .section-subheading {
   margin-bottom: 50px;
 }
+#album {
+  height: 100vh;
+}
+#album .container {
+  width: 55%;
+}
+#album .container .carousel .carousel-inner .item {
+  padding: 20px;
+}
+#album .container .carousel .carousel-control.left,
+#album .container .carousel .carousel-control.right {
+  background-image: none;
+  border: none;
+}
+#album .container .carousel .carousel-indicators {
+  bottom: 40px;
+}
+#album img.photo {
+  margin: auto;
+  box-shadow: 4px 4px 15px #2f2f2f;
+  border-radius: 5px;
+  border: solid 29px #EFEBEB;
+  max-height: 70vh;
+}
+@media (max-width: 768px) {
+  #album img.photo {
+    border: solid 15px #EFEBEB;
+  }
+}
 .navbar-brand {
   padding: 0px;
 }
