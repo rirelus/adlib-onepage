@@ -5,7 +5,7 @@
 
     var adlibApp = angular.module('adlibApp', []);
     adlibApp.controller('photosCtrl', ['$scope', function ($scope) {
-      $scope.NB_PHOTOS = 8;
+      $scope.NB_PHOTOS = 9;
     	$scope.myInterval = 5000;
       	$scope.noWrapSlides = false;
       	var slides = $scope.slides = [];
