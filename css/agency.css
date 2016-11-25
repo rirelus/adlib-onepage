@@ -13,6 +13,9 @@ body {
 .text-primary {
   color: #be0a27;
 }
+.fill {
+  height: 100vh;
+}
 p {
   font-size: 14px;
   line-height: 1.75;
@@ -188,7 +191,7 @@ fieldset[disabled] .btn-xl.active {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
-  color: white;
+  color: #be0a27;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
@@ -235,6 +238,14 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom.affix .navbar-brand.logo {
     width: 100%;
   }
+  .navbar-custom.affix .nav li a {
+    color: white;
+  }
+  .navbar-custom.affix .nav li a:hover,
+  .navbar-custom.affix .nav li a:focus {
+    color: #be0a27;
+    outline: none;
+  }
 }
 header {
   background-image: url('../img/header-bg.jpg');
@@ -258,6 +269,7 @@ header .intro-text .intro-lead-in {
   font-size: 22px;
   line-height: 22px;
   margin-bottom: 25px;
+  color: #be0a27;
 }
 header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -289,12 +301,12 @@ header .intro-text .intro-heading {
   }
 }
 section {
-  padding: 100px 0;
+  padding: 100px 0px;
 }
 section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
 }
 section h3.section-subheading {
   font-size: 16px;
@@ -306,11 +318,12 @@ section h3.section-subheading {
 }
 @media (min-width: 991px) {
   section {
-    padding: 50px 0;
+    padding: 100px 0;
   }
 }
 .service-heading {
   margin: 15px 0;
+  margin-bottom: 50px;
   text-transform: none;
 }
 .timeline {

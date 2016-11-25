@@ -16,6 +16,10 @@ body {
     color: @theme-primary;
 }
 
+.fill {
+  height: 100vh;
+}
+
 p {
     font-size: 14px;
     line-height: 1.75;
@@ -121,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
                 .heading-font;
                 font-weight: 400;
                 letter-spacing: 1px;
-                color: white;
+                color: @theme-primary;
                 &:hover,
                 &:focus {
                     color: @theme-primary;
@@ -174,6 +178,18 @@ h1, h2, h3, h4, h5, h6 {
         .navbar-brand.logo {
             width: 100%;
         }
+        .nav {
+            li {
+                a {
+                    color: white;
+                    &:hover,
+                    &:focus {
+                        color: @theme-primary;
+                        outline: none;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -194,6 +210,7 @@ header {
             font-size: 22px;
             line-height: 22px;
             margin-bottom: 25px;
+            color: @theme-primary;
         }
         .intro-heading {
             .heading-font;
@@ -231,11 +248,11 @@ header {
 // Global Section Styles
 
 section {
-    padding: 100px 0;
+    padding: 100px 0px;
     h2.section-heading {
         font-size: 40px;
         margin-top: 0;
-        margin-bottom: 15px;
+        margin-bottom: 45px;
     }
     h3.section-subheading {
         font-size: 16px;
@@ -249,7 +266,7 @@ section {
 
 @media(min-width:@breakpoint-navbar) {
     section {
-        padding: 50px 0;
+        padding: 100px 0;
     }
 }
 
@@ -257,6 +274,7 @@ section {
 
 .service-heading {
     margin: 15px 0;
+    margin-bottom: 50px;
     text-transform: none;
 }
 

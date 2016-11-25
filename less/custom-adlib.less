@@ -9,10 +9,29 @@
 h2 {
 	&::first-letter {
 		.first-letter;
-	}	
+	}
 }
 
+
 #presentation {
+
+	background-image: url(../img/fond.png), url(../img/bordure-fond.png), radial-gradient( farthest-side ellipse at top left, #bbb, #888);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top right, bottom left, right;
+  background: -moz-radial-gradient( farthest-side ellipse at top left, #bbb, #888), -webkit-radial-gradient(farthest-side ellipse at top left, #bbb, #888), radial-gradient( farthest-side ellipse at top left, #bbb, #888);
+
+  /*background-color: radial-gradient( farthest-side ellipse at top left, #bbb, rgb(73, 73, 73));
+	background-color: grey;
+  background-image: url("../img/fond.png"), url("../img/bordure-fond.png");*/
+  //background-attachment: fixed;
+
+	.cadre {
+	    padding: 15px;
+	    background-color: rgba(245, 244, 244, 0.67);
+	    border-radius: 27px;
+			margin-bottom: 20px;
+	}
+
 	.section-subheading {
 		font-size:	20px;
 	}
@@ -22,6 +41,14 @@ h2 {
 	  border-radius: 10px;
 	  box-shadow: 2px 2px 10px rgb(94, 94, 94);
 		margin-bottom: 20px;
+	}
+
+	.bordure-fond {
+	    position: fixed;
+	    float: left;
+	    bottom: 0px;
+	    margin-left: 0px;
+	    opacity: 0.3;
 	}
 }
 
