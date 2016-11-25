@@ -13,9 +13,6 @@ body {
 .text-primary {
   color: #be0a27;
 }
-.fill {
-  height: 100vh;
-}
 p {
   font-size: 14px;
   line-height: 1.75;
@@ -195,7 +192,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #be0a27;
+  color: #777777;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
@@ -223,6 +220,9 @@ fieldset[disabled] .btn-xl.active {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
+  .navbar-custom .navbar-brand img {
+    display: none;
+  }
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
   }
@@ -234,6 +234,9 @@ fieldset[disabled] .btn-xl.active {
   }
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
+  }
+  .navbar-custom.affix .navbar-brand img {
+    display: inherit;
   }
   .navbar-custom.affix .navbar-brand.logo {
     width: 100%;
@@ -258,10 +261,15 @@ header {
   -o-background-size: cover;
   text-align: center;
   color: white;
+  height: 100vh;
+}
+header .container {
+  width: 100%;
 }
 header .intro-text {
   padding-top: 100px;
   padding-bottom: 50px;
+  text-align: left;
 }
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -278,6 +286,11 @@ header .intro-text .intro-heading {
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 25px;
+}
+header .intro-text .logo {
+  margin-left: 20px;
+  min-width: 25%;
+  max-width: 350px;
 }
 @media (min-width: 991px) {
   header .intro-text {
@@ -298,6 +311,12 @@ header .intro-text .intro-heading {
     font-size: 75px;
     line-height: 75px;
     margin-bottom: 50px;
+  }
+}
+@media (max-width: 1300px) {
+  header .intro-text {
+    padding-top: 100px;
+    text-align: center;
   }
 }
 section {
@@ -570,6 +589,9 @@ section#contact .text-danger {
 footer {
   padding: 25px 0;
   text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100px;
 }
 footer span.copyright {
   line-height: 40px;

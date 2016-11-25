@@ -50,6 +50,9 @@ h2::first-letter {
   color: #be0a27;
   font-style: bold;
 }
+#about .section-subheading {
+  margin-bottom: 50px;
+}
 .navbar-brand {
   padding: 0px;
 }
