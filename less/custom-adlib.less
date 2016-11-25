@@ -1,16 +1,54 @@
 @import "variables.less";
 @import "mixins.less";
 
+.first-letter {
+		color: @red-adlib;
+		font-style: bold;
+}
+
+h2 {
+	&::first-letter {
+		.first-letter;
+	}	
+}
 
 #presentation {
 	.section-subheading {
 		font-size:	20px;
 	}
-	
-	.photo {
-	    width: 100%;
-	    border-radius: 10px;
-	    box-shadow: 2px 2px 10px rgb(94, 94, 94);
+
+	.photo-presentation {
+	  width: 100%;
+	  border-radius: 10px;
+	  box-shadow: 2px 2px 10px rgb(94, 94, 94);
 		margin-bottom: 20px;
 	}
+}
+
+#team {
+	.team-member {
+		h4 {
+			&::first-letter {
+					.first-letter;
+			}
+		}
+	}
+}
+
+#about {
+	h4.date {
+		&::first-letter {
+			.first-letter;
+		}
+	}
+}
+
+// Suppression des marge pour le titre de la NavBar
+.navbar-brand {
+	padding: 0px;
+}
+
+.navbar-brand>img {
+    display: block;
+    height: 100%;
 }

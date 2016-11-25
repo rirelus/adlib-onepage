@@ -158,7 +158,9 @@ fieldset[disabled] .btn-xl.active {
   background-image: url(../img/logo.png);
   background-size: 100% auto;
   background-position: center center;
+  background-repeat: no-repeat;
   display: block;
+  width: 80%;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -203,7 +205,7 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   background-color: #8e071d;
 }
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   .navbar-custom {
     background-color: transparent;
     padding: 25px 0;
@@ -222,7 +224,7 @@ fieldset[disabled] .btn-xl.active {
     border-radius: 3px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   .navbar-custom.affix {
     background-color: #333333;
     padding: 10px 0;
@@ -230,8 +232,8 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
-  .navbar-custom.affix .navbar-brand > img {
-    position: relative;
+  .navbar-custom.affix .navbar-brand.logo {
+    width: 100%;
   }
 }
 header {
@@ -265,7 +267,7 @@ header .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 25px;
 }
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   header .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
@@ -302,7 +304,7 @@ section h3.section-subheading {
   font-weight: 400;
   margin-bottom: 25px;
 }
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   section {
     padding: 50px 0;
   }
@@ -322,7 +324,7 @@ section h3.section-subheading {
   position: absolute;
   content: "";
   width: 2px;
-  background-color: #f1f1f1;
+  background-color: #555555;
   left: 40px;
   margin-left: -1.5px;
 }
@@ -407,12 +409,12 @@ section h3.section-subheading {
 .timeline .timeline-body > ul {
   margin-bottom: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   .timeline:before {
     left: 50%;
   }
   .timeline > li {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     min-height: 100px;
   }
   .timeline > li .timeline-panel {
@@ -561,6 +563,7 @@ footer span.copyright {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
+  color: white;
 }
 footer ul.quicklinks {
   margin-bottom: 0;
@@ -569,17 +572,27 @@ footer ul.quicklinks {
   text-transform: uppercase;
   text-transform: none;
 }
+footer ul.social-buttons li a {
+  background-color: white;
+  color: #222222;
+}
+footer ul.social-buttons li a:hover,
+footer ul.social-buttons li a:focus,
+footer ul.social-buttons li a:active {
+  background-color: #be0a27;
+  color: white;
+}
 ul.social-buttons {
   margin-bottom: 0;
 }
 ul.social-buttons li a {
   display: block;
-  background-color: #222222;
-  height: 40px;
-  width: 40px;
+  background-color: #333333;
+  height: 60px;
+  width: 60px;
   border-radius: 100%;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 40px;
+  line-height: 60px;
   color: white;
   outline: none;
   -webkit-transition: all 0.3s;

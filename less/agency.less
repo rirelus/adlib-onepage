@@ -85,12 +85,14 @@ h1, h2, h3, h4, h5, h6 {
     border-color: transparent;
     .navbar-brand {
         color: @theme-primary;
-        .script-font;        	
+        .script-font;
         &.logo {
-	       background-image:url(../img/logo.png); 
-	       background-size: 100% auto; 
-	       background-position: center center; 
+	       background-image:url(../img/logo.png);
+	       background-size: 100% auto;
+	       background-position: center center;
+         background-repeat: no-repeat;
 	       display:block;
+         width: 80%;
 	    }
         &:hover,
         &:focus,
@@ -140,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media(min-width:768px) {
+@media(min-width:@breakpoint-navbar) {
     .navbar-custom {
         background-color: transparent;
         padding: 25px 0;
@@ -162,15 +164,15 @@ h1, h2, h3, h4, h5, h6 {
 
 // Navbar Change on Scroll
 
-@media(min-width:768px) {
+@media(min-width:@breakpoint-navbar) {
     .navbar-custom.affix {
         background-color: @gray-dark;
         padding: 10px 0;
         .navbar-brand {
             font-size: 1.5em;
         }
-        .navbar-brand>img {
-            position: relative;
+        .navbar-brand.logo {
+            width: 100%;
         }
     }
 }
@@ -203,7 +205,7 @@ header {
     }
 }
 
-@media(min-width:768px) {
+@media(min-width:@breakpoint-navbar) {
     header {
         .intro-text {
             padding-top: 300px;
@@ -245,7 +247,7 @@ section {
     }
 }
 
-@media(min-width:768px) {
+@media(min-width:@breakpoint-navbar) {
     section {
         padding: 50px 0;
     }
@@ -271,7 +273,7 @@ section {
         position: absolute;
         content: "";
         width: 2px;
-        background-color: #f1f1f1;
+        background-color: @timeline-line-color;
         left: 40px;
         margin-left: -1.5px;
     }
@@ -362,13 +364,13 @@ section {
     }
 }
 
-@media(min-width:768px) {
+@media(min-width:@breakpoint-navbar) {
     .timeline {
         &:before {
             left: 50%;
         }
         > li {
-            margin-bottom: 100px;
+            margin-bottom: @timeline-line-margin;
             min-height: 100px;
             .timeline-panel {
                 width: 41%;
@@ -511,7 +513,7 @@ section#contact {
        font-weight: 700;
        color: @gray-lighter;
     }
-    :-ms-input-placeholder {  
+    :-ms-input-placeholder {
        .heading-font;
        font-weight: 700;
        color: @gray-lighter;
@@ -530,12 +532,27 @@ footer {
         line-height: 40px;
         .heading-font;
         text-transform: none;
+        color: white;
     }
     ul.quicklinks {
         margin-bottom: 0;
         line-height: 40px;
         .heading-font;
         text-transform: none;
+    }
+    ul.social-buttons {
+        li {
+          a {
+            background-color: white;
+            color: @gray-darker;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: @theme-primary;
+                color: white;
+            }
+        }
+      }
     }
 }
 
@@ -546,12 +563,12 @@ ul.social-buttons {
     li {
         a {
             display: block;
-            background-color: @gray-darker;
-            height: 40px;
-            width: 40px;
+            background-color: @gray-dark;
+            height: 60px;
+            width: 60px;
             border-radius: 100%;
-            font-size: 20px;
-            line-height: 40px;
+            font-size: 40px;
+            line-height: 60px;
             color: white;
             outline: none;
             -webkit-transition: all 0.3s;
