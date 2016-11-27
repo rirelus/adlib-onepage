@@ -317,10 +317,9 @@ header .intro-text .logo {
     margin-bottom: 50px;
   }
 }
-@media (max-width: 1300px) {
-  header .intro-text {
-    padding-top: 100px;
-    text-align: center;
+@media (min-width: 1400px) {
+  header {
+    background-image: url('../img/header-bg-lg.jpg');
   }
 }
 section {
