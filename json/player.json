@@ -1,0 +1,21 @@
+[
+  {
+    "id" : "music0",
+    "title" : "New world",
+    "composer" : "Björk",
+    "arranger" : "Adeline Guihard",
+    "source" : "./music/01 New world.mp3"
+  }, {
+    "id" : "music1",
+    "title" : "Le chemin",
+    "composer" : "Adeline Guihard",
+    "arranger" : "Adeline Guihard",
+    "source" : "./music/03 Le chemin.mp3"
+  }, {
+    "id" : "music2",
+    "title" : "Sign your name",
+    "composer" : "Terence Trent D'Arby",
+    "arranger" : "Adeline Guihard",
+    "source" : "./music/06 Sign your name.mp3"
+  }
+]

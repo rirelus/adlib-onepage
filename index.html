@@ -323,6 +323,21 @@
         </div>
     </section>
 
+    <div id="player" data-ng-controller="musicCtrl">
+        <div class="block">
+          <i class="fa fa-music menu"></i>
+          <audio id="audio">
+            <source id="{{music.id}}" data-ng-repeat="music in musics" ng-src="{{music.source}}" type="audio/mpeg">
+          </audio>
+          <div class="buttons">
+              <i class="fa fa-step-backward" data-ng-click="previous()"></i>
+              <i class="fa fa-play" data-ng-if="!isPlaying" data-ng-click="play()"></i>
+              <i class="fa fa-stop" data-ng-if="isPlaying" data-ng-click="stop()"></i>
+              <i class="fa fa-step-forward" data-ng-click="next()"></i>
+          </div>
+        </div>
+    </div>
+
     <footer class="bg-darkest-gray">
         <div class="container">
             <div class="row">

@@ -673,6 +673,49 @@ ul.social-buttons {
     }
 }
 
+// Player
+div#player {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  right: 0;
+  .block {
+    width: 50px;
+    height: 50px;
+    background-color: @theme-primary;
+    border-radius: 50px 0px 0px 0px;
+    box-shadow: -2px -2px 18px #aaa;
+    padding-top: 17px;
+    .menu {
+      padding-left: 22px;
+      font-size: 1.5em;
+    }
+    .buttons {
+      display: none;
+    }
+  }
+  .block:hover {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px 0px 0px 0px;
+    padding-top: 15px;
+    .menu {
+      padding-left: 39px;
+      font-size: 2.0em;
+    }
+    .buttons {
+      display: block;
+      padding-top: 10px;
+      padding-left: 10px;
+      text-align: center;
+      i {
+        cursor: pointer;
+        padding: 4px;
+      }
+    }
+  }
+}
+
 .btn:focus,
 .btn:active,
 .btn.active,
