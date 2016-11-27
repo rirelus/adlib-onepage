@@ -1,0 +1,35 @@
+[
+  {
+    "index": 1,
+    "image" : "img/album/1.jpg",
+    "description": "à la base sous-marine de Saint-Nazaire"
+  },
+  {
+    "index": 2,
+    "image": "img/album/2.jpg",
+    "title": "Entre femmes",
+    "description": "à la base sous-marine de Saint-Nazaire"
+  },
+  {
+    "index": 3,
+    "image" : "img/album/3.jpg",
+    "title": "Entre hommes",
+    "description": "à la base sous-marine de Saint-Nazaire"
+  },
+  {
+    "index": 4,
+    "image" : "img/album/4.jpg",
+    "title": "Avec le groupe Totàl Vokàl",
+    "description": "très belle rencontre avec ce groupe tchèque !"
+  },
+  {
+    "index": 5,
+    "image" : "img/album/5.jpg",
+    "title": "Souvenir de notre participation à Vokàl Totàl"
+  },
+  {
+    "index": 6,
+    "image" : "img/album/6.jpg",
+    "title": "Base sous-marine à Saint-Nazaire"
+  }
+]

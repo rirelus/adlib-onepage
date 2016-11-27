@@ -4,20 +4,26 @@
     "use strict"; // Start of use strict
 
     var adlibApp = angular.module('adlibApp', []);
-    adlibApp.controller('photosCtrl', ['$scope', function ($scope) {
+    adlibApp.controller('photosCtrl', ['$scope', '$http', function ($scope, $http) {
       $scope.NB_PHOTOS = 6;
     	$scope.myInterval = 5000;
       	$scope.noWrapSlides = false;
       	var slides = $scope.slides = [];
 
-      	for (var i=1; i<=$scope.NB_PHOTOS; i++) {
+      	/*for (var i=1; i<=$scope.NB_PHOTOS; i++) {
     		$scope.slides.push({
             index: i - 1,
     	    	image: 'img/album/' + i + '.jpg',
             active: ''
     	    });
-      	}
-        $scope.slides[0].active = 'active';
+      	};*/
+
+        $http.get('json/album.json').success(function(data) {
+          console.log("json ok");
+          $scope.slides = data;
+          $scope.slides[0].active = 'active';
+        });
+
     }]);
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
