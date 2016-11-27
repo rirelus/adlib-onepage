@@ -10,16 +10,7 @@
       	$scope.noWrapSlides = false;
       	var slides = $scope.slides = [];
 
-      	/*for (var i=1; i<=$scope.NB_PHOTOS; i++) {
-    		$scope.slides.push({
-            index: i - 1,
-    	    	image: 'img/album/' + i + '.jpg',
-            active: ''
-    	    });
-      	};*/
-
         $http.get('json/album.json').success(function(data) {
-          console.log("json ok");
           $scope.slides = data;
           $scope.slides[0].active = 'active';
         });
