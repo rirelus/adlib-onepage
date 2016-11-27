@@ -54,32 +54,31 @@ h2::first-letter {
   margin-bottom: 50px;
 }
 #album {
-  height: 100vh;
+  min-height: 100vh;
 }
-#album .container {
-  width: 55%;
-}
-#album .container .carousel .carousel-inner .item {
-  padding: 20px;
-}
-#album .container .carousel .carousel-control.left,
-#album .container .carousel .carousel-control.right {
-  background-image: none;
-  border: none;
-}
-#album .container .carousel .carousel-indicators {
-  bottom: 40px;
+#album .container .carousel {
+  /*.carousel-inner {
+				.item {
+					padding: 20px;
+				}
+			}
+			.carousel-control {
+					width: auto;
+			}
+			.carousel-control.left, .carousel-control.right  {
+					background-image : none;
+					border: none;
+			}
+			.carousel-indicators {
+				bottom: 40px;
+			}*/
 }
 #album img.photo {
-  margin: auto;
-  box-shadow: 4px 4px 15px #2f2f2f;
-  border-radius: 5px;
-  border: solid 29px #EFEBEB;
-  max-height: 70vh;
+  margin: 0px auto;
 }
-@media (max-width: 768px) {
-  #album img.photo {
-    border: solid 15px #EFEBEB;
+@media (min-width: 1200px) {
+  #album .container {
+    width: 1000px;
   }
 }
 .navbar-brand {

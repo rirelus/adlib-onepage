@@ -73,40 +73,19 @@ h2 {
 }
 
 #album {
-	height: 100vh;
-	.container {
-		width: 55%;
-		.carousel {
-			.carousel-inner {
-				.item {
-					padding: 20px;
-				}
-			}
-			.carousel-control.left, .carousel-control.right  {
-					background-image : none;
-					border: none;
-			}
-			.carousel-indicators {
-				bottom: 40px;
-			}
-		}
+	min-height: 100vh;
 	}
-
 	img.photo {
-		margin: auto;
-		box-shadow: 4px 4px 15px rgb(47, 47, 47);
-		border-radius: 5px;
-		border: solid 29px #EFEBEB;
-		max-height: 70vh;
+		margin: 0px auto;
 	}
 }
 
-@media(max-width:@breakpoint-album-cadre) {
-		#album {
-				img.photo {
-					border: solid 15px #EFEBEB;
-				}
-		}
+@media (min-width: 1200px) {
+	#album {
+			.container {
+		    width: 1000px;
+			}
+	}
 }
 
 // Suppression des marge pour le titre de la NavBar
