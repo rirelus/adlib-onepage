@@ -7,14 +7,14 @@
   {
     "index": 2,
     "image": "img/album/2.jpg",
-    "title": "Entre femmes",
-    "description": "à la base sous-marine de Saint-Nazaire"
+    "title": "Les femmes",
+    "description": "A la base sous-marine de Saint-Nazaire"
   },
   {
     "index": 3,
     "image" : "img/album/3.jpg",
-    "title": "Entre hommes",
-    "description": "à la base sous-marine de Saint-Nazaire"
+    "title": "Les hommes",
+    "description": "A la base sous-marine de Saint-Nazaire"
   },
   {
     "index": 4,
@@ -30,6 +30,6 @@
   {
     "index": 6,
     "image" : "img/album/6.jpg",
-    "title": "Base sous-marine à Saint-Nazaire"
+    "description": "A la base sous-marine à Saint-Nazaire"
   }
 ]
