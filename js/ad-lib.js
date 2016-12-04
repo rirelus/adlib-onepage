@@ -45,6 +45,7 @@
     }]);
 
     adlibApp.controller('musicCtrl', ['$scope', '$http', function ($scope, $http) {
+      $scope.show = "";
       $http.get('json/player.json').success(function(data) {
         console.log("music loaded");
         $scope.musics = data;
@@ -52,6 +53,14 @@
         $scope.currentMusicInd = 0;
       	$scope.currentMusic = $scope.musics[$scope.currentMusicInd];
       });
+
+      $scope.display = function() {
+        if ($scope.show === "") {
+          $scope.show = "display";
+        } else {
+          $scope.show = "";
+        }
+      };
 
       // Lecture d'une chanson
       $scope.play = function () {

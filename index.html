@@ -343,8 +343,8 @@
     </section>
 
     <div id="player" data-ng-controller="musicCtrl">
-        <div class="block">
-          <i class="fa fa-music menu"></i>
+        <div class="block {{show}}">
+          <i class="fa fa-music menu" data-ng-click="display()"></i>
           <audio id="audio">
             <source id="{{music.id}}" data-ng-repeat="music in musics" ng-src="{{music.source}}" type="audio/mpeg">
           </audio>
@@ -360,9 +360,7 @@
     <footer class="bg-darkest-gray">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-4">
+                <div class="col-sm-offset-4 col-sm-4">
                     <ul class="list-inline social-buttons">
                       <li><a href="http://www.facebook.com/adlibacapella" target="_blank"><i class="fa fa-facebook"></i></a>
                       </li>
@@ -370,7 +368,7 @@
                       </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="hidden-xs col-sm-4">
                     <span class="copyright">Copyright &copy; Ad Lib' a capella 2016</span>
                     <ul class="list-inline quicklinks">
                     </ul>
