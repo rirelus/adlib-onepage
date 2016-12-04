@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Karine Evain",
+    "role": "Mezzo soprano",
+    "photo": "1"
+  },
+  {
+    "name": "Emmanuelle Maillard",
+    "role": "Alto",
+    "photo": "2"
+  },
+  {
+    "name": "Solenn Ricordel",
+    "role": "Soprano",
+    "photo": "3"
+  },
+  {
+    "name": "Xavier Peny",
+    "role": "Tenor",
+    "photo": "4"
+  },
+  {
+    "name": "Romuald Maillard",
+    "role": "Baryton",
+    "photo": "5"
+  },
+  {
+    "name": "Eric Docet",
+    "role": "Beat-box",
+    "photo": "6"
+  },
+  {
+    "name": "Adeline Guihard",
+    "role": "Direction artistique / Arrangements, compositions",
+    "photo": "7"
+  }
+]

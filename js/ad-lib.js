@@ -58,6 +58,14 @@
       });
     }]);
 
+    adlibApp.controller('teamCtrl', ['$scope', '$http', function ($scope, $http) {
+  		var slides = $scope.slides = [];
+      $http.get('json/chanteurs.json').success(function(data) {
+        $scope.team = data;
+        $scope.team[6].style="col-sm-offset-4"; // solution palliative pour centrer Adeline
+      });
+    }]);
+
     adlibApp.controller('musicCtrl', ['$scope', '$http', function ($scope, $http) {
       $scope.show = "";
       $http.get('json/player.json').success(function(data) {
