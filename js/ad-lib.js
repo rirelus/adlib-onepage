@@ -44,6 +44,20 @@
       });
     }]);
 
+    adlibApp.controller('eventCtrl', ['$scope', '$http', function ($scope, $http) {
+  		var slides = $scope.slides = [];
+      $http.get('json/events.json').success(function(data) {
+        $scope.events = data;
+        for (var i = 0; i < $scope.events.length; i++) {
+          if (i % 2 === 0) {
+            $scope.events[i].inverseClass = "";
+          } else {
+            $scope.events[i].inverseClass = "timeline-inverted";
+          }
+        }
+      });
+    }]);
+
     adlibApp.controller('musicCtrl', ['$scope', '$http', function ($scope, $http) {
       $scope.show = "";
       $http.get('json/player.json').success(function(data) {
